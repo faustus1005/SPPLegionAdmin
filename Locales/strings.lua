@@ -37,7 +37,7 @@ function ReturnStrings_enUS()
     ["ma_GmatchOnlinePlayers"] = "Online players: (%d+) %(max: (%d+)%)",
     ["ma_GmatchUptime"] = "Server uptime: (.*)",
     ["ma_GmatchActiveConnections"] = "Active connections.*",
-    ["ma_GmatchWho"] = "%-%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]-",
+    ["ma_GmatchWho"] = "%-%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%-",
 
     --linkifier
     ----------====~~GO Target Command Match Text ~~====----------
@@ -102,7 +102,7 @@ function ReturnStrings_csCZ()
     ["ma_GmatchOnlinePlayers"] = "Online players: (%d+) %(max: (%d+)%)",
     ["ma_GmatchUptime"] = "Server uptime: (.*)",
     ["ma_GmatchActiveConnections"] = "Active connections.*",
-    ["ma_GmatchWho"] = "%-%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]-",
+    ["ma_GmatchWho"] = "%-%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%-",
 
     --linkifier
     ----------====~~GO Target Command Match Text ~~====----------
@@ -166,7 +166,7 @@ function ReturnStrings_deDE()
     ["ma_GmatchOnlinePlayers"] = "Online players: (%d+) %(max: (%d+)%)",
     ["ma_GmatchUptime"] = "Server uptime: (.*)",
     ["ma_GmatchActiveConnections"] = "Active connections.*",
-    ["ma_GmatchWho"] = "%-%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]-",
+    ["ma_GmatchWho"] = "%-%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%-",
 
     --linkifier
     ----------====~~GO Target Command Match Text ~~====----------
@@ -230,7 +230,7 @@ function ReturnStrings_esES()
     ["ma_GmatchOnlinePlayers"] = "Online players: (%d+) %(max: (%d+)%)",
     ["ma_GmatchUptime"] = "Server uptime: (.*)",
     ["ma_GmatchActiveConnections"] = "Active connections.*",
-    ["ma_GmatchWho"] = "%-%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]-",
+    ["ma_GmatchWho"] = "%-%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%-",
 
     --linkifier
     ----------====~~GO Target Command Match Text ~~====----------
@@ -295,7 +295,7 @@ function ReturnStrings_fiFI()
     ["ma_GmatchOnlinePlayers"] = "Online players: (%d+) %(max: (%d+)%)",
     ["ma_GmatchUptime"] = "Server uptime: (.*)",
     ["ma_GmatchActiveConnections"] = "Active connections.*",
-    ["ma_GmatchWho"] = "%-%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]-",
+    ["ma_GmatchWho"] = "%-%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%-",
 
     --linkifier
     ----------====~~GO Target Command Match Text ~~====----------
@@ -360,7 +360,7 @@ function ReturnStrings_frFR()
     ["ma_GmatchOnlinePlayers"] = "Online players: (%d+) %(max: (%d+)%)",
     ["ma_GmatchUptime"] = "Server uptime: (.*)",
     ["ma_GmatchActiveConnections"] = "Active connections.*",
-    ["ma_GmatchWho"] = "%-%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]-",
+    ["ma_GmatchWho"] = "%-%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%-",
 
     --linkifier
     ----------====~~GO Target Command Match Text ~~====----------
@@ -425,7 +425,7 @@ function ReturnStrings_huHU()
     ["ma_GmatchOnlinePlayers"] = "Online players: (%d+) %(max: (%d+)%)",
     ["ma_GmatchUptime"] = "Server uptime: (.*)",
     ["ma_GmatchActiveConnections"] = "Active connections.*",
-    ["ma_GmatchWho"] = "%-%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]-",
+    ["ma_GmatchWho"] = "%-%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%-",
 
     --linkifier
     ----------====~~GO Target Command Match Text ~~====----------
@@ -490,7 +490,7 @@ function ReturnStrings_itIT()
     ["ma_GmatchOnlinePlayers"] = "Online players: (%d+) %(max: (%d+)%)",
     ["ma_GmatchUptime"] = "Server uptime: (.*)",
     ["ma_GmatchActiveConnections"] = "Active connections.*",
-    ["ma_GmatchWho"] = "%-%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]-",
+    ["ma_GmatchWho"] = "%-%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%-",
 
     --linkifier
     ----------====~~GO Target Command Match Text ~~====----------
@@ -555,7 +555,7 @@ function ReturnStrings_liLI()
     ["ma_GmatchOnlinePlayers"] = "Online players: (%d+) %(max: (%d+)%)",
     ["ma_GmatchUptime"] = "Server uptime: (.*)",
     ["ma_GmatchActiveConnections"] = "Active connections.*",
-    ["ma_GmatchWho"] = "%-%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]-",
+    ["ma_GmatchWho"] = "%-%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%-",
 
     --linkifier
     ----------====~~GO Target Command Match Text ~~====----------
@@ -620,7 +620,7 @@ function ReturnStrings_nlNL()
     ["ma_GmatchOnlinePlayers"] = "Online players: (%d+) %(max: (%d+)%)",
     ["ma_GmatchUptime"] = "Server uptime: (.*)",
     ["ma_GmatchActiveConnections"] = "Active connections.*",
-    ["ma_GmatchWho"] = "%-%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]-",
+    ["ma_GmatchWho"] = "%-%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%-",
 
     --linkifier
     ----------====~~GO Target Command Match Text ~~====----------
@@ -685,7 +685,7 @@ function ReturnStrings_plPL()
     ["ma_GmatchOnlinePlayers"] = "Online players: (%d+) %(max: (%d+)%)",
     ["ma_GmatchUptime"] = "Server uptime: (.*)",
     ["ma_GmatchActiveConnections"] = "Active connections.*",
-    ["ma_GmatchWho"] = "%-%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]-",
+    ["ma_GmatchWho"] = "%-%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%-",
 
     --linkifier
     ----------====~~GO Target Command Match Text ~~====----------
@@ -750,7 +750,7 @@ function ReturnStrings_ptPT()
     ["ma_GmatchOnlinePlayers"] = "Online players: (%d+) %(max: (%d+)%)",
     ["ma_GmatchUptime"] = "Server uptime: (.*)",
     ["ma_GmatchActiveConnections"] = "Active connections.*",
-    ["ma_GmatchWho"] = "%-%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]-",
+    ["ma_GmatchWho"] = "%-%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%-",
 
     --linkifier
     ----------====~~GO Target Command Match Text ~~====----------
@@ -815,7 +815,7 @@ function ReturnStrings_roRO()
     ["ma_GmatchOnlinePlayers"] = "Online players: (%d+) %(max: (%d+)%)",
     ["ma_GmatchUptime"] = "Server uptime: (.*)",
     ["ma_GmatchActiveConnections"] = "Active connections.*",
-    ["ma_GmatchWho"] = "%-%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]-",
+    ["ma_GmatchWho"] = "%-%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%-",
 
     --linkifier
     ----------====~~GO Target Command Match Text ~~====----------
@@ -880,7 +880,7 @@ function ReturnStrings_ruRU()
     ["ma_GmatchOnlinePlayers"] = "Online players: (%d+) %(max: (%d+)%)",
     ["ma_GmatchUptime"] = "Server uptime: (.*)",
     ["ma_GmatchActiveConnections"] = "Active connections.*",
-    ["ma_GmatchWho"] = "%-%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]-",
+    ["ma_GmatchWho"] = "%-%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%-",
 
     --linkifier
     ----------====~~GO Target Command Match Text ~~====----------
@@ -945,7 +945,7 @@ function ReturnStrings_svSV()
     ["ma_GmatchOnlinePlayers"] = "Online players: (%d+) %(max: (%d+)%)",
     ["ma_GmatchUptime"] = "Server uptime: (.*)",
     ["ma_GmatchActiveConnections"] = "Active connections.*",
-    ["ma_GmatchWho"] = "%-%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]-",
+    ["ma_GmatchWho"] = "%-%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%-",
 
     --linkifier
     ----------====~~GO Target Command Match Text ~~====----------
@@ -1010,7 +1010,7 @@ function ReturnStrings_zhCN()
     ["ma_GmatchOnlinePlayers"] = "Online players: (%d+) %(max: (%d+)%)",
     ["ma_GmatchUptime"] = "Server uptime: (.*)",
     ["ma_GmatchActiveConnections"] = "Active connections.*",
-    ["ma_GmatchWho"] = "%-%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]-",
+    ["ma_GmatchWho"] = "%-%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%-",
 
     --linkifier
     ----------====~~GO Target Command Match Text ~~====----------
@@ -1075,7 +1075,7 @@ function ReturnStrings_buBU()
     ["ma_GmatchOnlinePlayers"] = "Online players: (%d+) %(max: (%d+)%)",
     ["ma_GmatchUptime"] = "Server uptime: (.*)",
     ["ma_GmatchActiveConnections"] = "Active connections.*",
-    ["ma_GmatchWho"] = "%-%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]%[(.*)%]-",
+    ["ma_GmatchWho"] = "%-%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%|?%[(.-)%]%-",
 
     --linkifier
     ----------====~~GO Target Command Match Text ~~====----------

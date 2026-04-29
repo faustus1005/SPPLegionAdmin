@@ -17,8 +17,7 @@
 
 function WhoUpdate()
     MangAdmin:LogAction("Getting Who.")
-    local whoCount = 0
-    table.foreachi(MangAdmin.db.account.buffer.who, function() whoCount = whoCount + 1 end)
+    local whoCount = #MangAdmin.db.account.buffer.who
     if whoCount > 0 then
       ma_whoscrollframe1:SetText("Loading")
       local lineplusoffset
