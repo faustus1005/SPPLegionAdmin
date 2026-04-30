@@ -410,8 +410,8 @@ function MangAdmin:InstantGroupToggle(group)
     self.db.char.requests.ticket = false
   end
   if group== "who" then
-    MangAdmin:ChatMsg(".account onlinelist")
     ResetWho()
+    MangAdmin:ChatMsg(".account onlinelist")
   end
   FrameLib:HandleGroup("bg", function(frame) frame:Show() end)
   MangAdmin:ToggleTabButton(group)
@@ -932,16 +932,10 @@ function MangAdmin:AddMessage(frame, text, r, g, b, id)
     end
     if string.find(onlineText, "Characters Online", 1, true) then
       self.db.account.buffer.onlinelistCount = 0
+      self.db.account.buffer.who = {}
       ma_infoonlinetext:SetText(Locale["info_online"].."0")
       ma_infomaxonlinetext:SetText(Locale["info_maxonline"].."?")
-      matchedOnlinePlayers = true
-      catchedSth = true
-      output = showServerInfoOutput
-    end
-    for account, char, ip, mapId, zoneId, exp, gmLevel in string.gmatch(onlineText, "%-%[(.-)%]%|%[(.-)%]%|%[(.-)%]%|%[(.-)%]%|%[(.-)%]%|%[(.-)%]%|%[(.-)%]%-%") do
-      self.db.account.buffer.onlinelistCount = (self.db.account.buffer.onlinelistCount or 0) + 1
-      ma_infoonlinetext:SetText(Locale["info_online"]..self.db.account.buffer.onlinelistCount)
-      ma_infomaxonlinetext:SetText(Locale["info_maxonline"].."?")
+      WhoUpdate()
       matchedOnlinePlayers = true
       catchedSth = true
       output = showServerInfoOutput
@@ -1065,23 +1059,26 @@ function MangAdmin:AddMessage(frame, text, r, g, b, id)
 
     end
 
+    local whoMatched = false
     for acc, char, ip, map, zone, exp, gmlevel in string.gmatch(text, Strings["ma_GmatchWho"]) do
-    	acc= string.gsub(acc, " ", "")
-    	char= string.gsub(char, " ", "")
-    	ip= string.gsub(ip, " ", "")
-        map=string.gsub(map, " ", "")
-        zone=string.gsub(zone, " ", "")
-    	exp= string.gsub(exp, " ", "")
-    	gmlevel= string.gsub(gmlevel, " ", "")
-        gmlevel=strtrim(gmlevel, "]-")
-        --self:ChatMsg("Matched Who")
-        if acc == "Account" then
-        else
+        acc = string.gsub(acc, " ", "")
+        char = string.gsub(char, " ", "")
+        ip = string.gsub(ip, " ", "")
+        map = string.gsub(map, " ", "")
+        zone = string.gsub(zone, " ", "")
+        exp = string.gsub(exp, " ", "")
+        gmlevel = string.gsub(gmlevel, " ", "")
+        if acc ~= "Account" then
             table.insert(MangAdmin.db.account.buffer.who, {tAcc = acc, tChar = char, tIP = ip, tMap = map, tZone = zone, tExp = exp, tGMLevel = gmlevel})
+            self.db.account.buffer.onlinelistCount = (self.db.account.buffer.onlinelistCount or 0) + 1
+            ma_infoonlinetext:SetText(Locale["info_online"]..self.db.account.buffer.onlinelistCount)
+            whoMatched = true
         end
-            catchedSth = true
-            output = MangAdmin.db.account.style.showchat
-            WhoUpdate()
+        catchedSth = true
+        output = MangAdmin.db.account.style.showchat
+    end
+    if whoMatched then
+        WhoUpdate()
     end
 --    ["ma_GmatchAccountInfo"] = "Player(.*) %(guid: (%d+)%) Account: (.*) %(id: (%d+)%) Email: (.*) GMLevel: (%d+) Last IP: (.*) Last login: (.*) Latency: (%d+)ms",
 --    ["ma_GmatchAccountInfo2"] = "Race: (.*) Class: (.*) Played time: (.*) Level: (%d+) Money: (.*)",
