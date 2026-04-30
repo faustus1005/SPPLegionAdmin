@@ -959,7 +959,11 @@ function MangAdmin:AddMessage(frame, text, r, g, b, id)
         "Online players: ([%d,]+) %(max:?%s*([%d,]+)[^%)]*%)",
         "Online Players: ([%d,]+) %(max:?%s*([%d,]+)[^%)]*%)",
         "Online players: ([%d,]+) %(Max:?%s*([%d,]+)[^%)]*%)",
-        "Online Players: ([%d,]+) %(Max:?%s*([%d,]+)[^%)]*%)"
+        "Online Players: ([%d,]+) %(Max:?%s*([%d,]+)[^%)]*%)",
+        "Active connections: ([%d,]+) %(max:?%s*([%d,]+)[^%)]*%)",
+        "Active Connections: ([%d,]+) %(max:?%s*([%d,]+)[^%)]*%)",
+        "Active connections: ([%d,]+) %(Max:?%s*([%d,]+)[^%)]*%)",
+        "Active Connections: ([%d,]+) %(Max:?%s*([%d,]+)[^%)]*%)"
       }
       for _, pattern in ipairs(fallbackPatterns) do
         for users, maxusers in string.gmatch(onlineText, pattern) do
