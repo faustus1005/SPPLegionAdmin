@@ -33,11 +33,11 @@ function MangAdmin:CreateLogSection()
     group = "log",
     parent = ma_midframe,
     texture = {
-      color = {10,10,10,0.7},
+      color = {0.02, 0.06, 0.03, 0.7},
       gradient = {
         orientation = "horizontal",
-        min = {10,10,10,0.7},
-        max = {10,10,10,0}
+        min = {0.02, 0.06, 0.03, 0.7},
+        max = {0.02, 0.06, 0.03, 0}
       }
     },
     size = {

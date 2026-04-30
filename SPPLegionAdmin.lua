@@ -113,30 +113,30 @@ MangAdmin:RegisterDefaults("account",
       showminimenu = true,
       transparency = {
         buttons = 1.0,
-        frames = 0.5,
-        backgrounds = 0.5
+        frames = 0.75,
+        backgrounds = 0.88
       },
       color = {
         buffer = {},
         buttons = {
-          r = 0.42,
-          g = 0.29,
-          b = 0.12
+          r = 0.10,
+          g = 0.42,
+          b = 0.16
         },
         frames = {
-          r = 0.18,
-          g = 0.13,
-          b = 0.08
+          r = 0.05,
+          g = 0.14,
+          b = 0.07
         },
         backgrounds = {
-          r = 0.09,
-          g = 0.07,
-          b = 0.05
+          r = 0.02,
+          g = 0.06,
+          b = 0.03
         },
         linkifier = {
-          r = 1.0,
-          g = 0.82,
-          b = 0.0
+          r = 0.55,
+          g = 1.00,
+          b = 0.30
         }
       }
     }
@@ -391,9 +391,9 @@ function MangAdmin:ToggleTabButton(group)
   FrameLib:HandleGroup("tabbuttons",
   function(button)
     if button:GetName() == "ma_tabbutton_"..group then
-      getglobal(button:GetName().."_texture"):SetGradientAlpha("vertical", 102, 102, 102, 1, 102, 102, 102, 0.7)
+      getglobal(button:GetName().."_texture"):SetGradientAlpha("vertical", 0.20, 0.85, 0.30, 1, 0.05, 0.30, 0.10, 0.85)
     else
-      getglobal(button:GetName().."_texture"):SetGradientAlpha("vertical", 102, 102, 102, 0, 102, 102, 102, 0.7)
+      getglobal(button:GetName().."_texture"):SetGradientAlpha("vertical", 0.20, 0.85, 0.30, 0, 0.05, 0.30, 0.10, 0.55)
     end
   end)
 end
@@ -433,8 +433,8 @@ function MangAdmin:TogglePopup(value, param)
   else]]
   if value == "search" then
     FrameLib:HandleGroup("popup", function(frame) frame:Show() end)
-    getglobal("ma_ptabbutton_1_texture"):SetGradientAlpha("vertical", 102, 102, 102, 1, 102, 102, 102, 0.7)
-    getglobal("ma_ptabbutton_2_texture"):SetGradientAlpha("vertical", 102, 102, 102, 0, 102, 102, 102, 0.7)
+    getglobal("ma_ptabbutton_1_texture"):SetGradientAlpha("vertical", 0.20, 0.85, 0.30, 1, 0.05, 0.30, 0.10, 0.85)
+    getglobal("ma_ptabbutton_2_texture"):SetGradientAlpha("vertical", 0.20, 0.85, 0.30, 0, 0.05, 0.30, 0.10, 0.55)
     ma_mailscrollframe:Hide()
     ma_maileditbox:Hide()
     ma_var1editbox:Hide()
@@ -501,15 +501,15 @@ function MangAdmin:TogglePopup(value, param)
     end
   elseif value == "favorites" then
     self:SearchReset()
-    getglobal("ma_ptabbutton_2_texture"):SetGradientAlpha("vertical", 102, 102, 102, 1, 102, 102, 102, 0.7)
-    getglobal("ma_ptabbutton_1_texture"):SetGradientAlpha("vertical", 102, 102, 102, 0, 102, 102, 102, 0.7)
+    getglobal("ma_ptabbutton_2_texture"):SetGradientAlpha("vertical", 0.20, 0.85, 0.30, 1, 0.05, 0.30, 0.10, 0.85)
+    getglobal("ma_ptabbutton_1_texture"):SetGradientAlpha("vertical", 0.20, 0.85, 0.30, 0, 0.05, 0.30, 0.10, 0.55)
     ma_modfavsbutton:SetScript("OnClick", function() self:Favorites("remove", param.type) end)
     ma_modfavsbutton:SetText(Locale["ma_FavRemove"])
     ma_modfavsbutton:Enable()
     self:Favorites("show", param.type)
   elseif value == "mail" then
-    getglobal("ma_ptabbutton_1_texture"):SetGradientAlpha("vertical", 102, 102, 102, 1, 102, 102, 102, 0.7)
-    getglobal("ma_ptabbutton_2_texture"):SetGradientAlpha("vertical", 102, 102, 102, 0, 102, 102, 102, 0.7)
+    getglobal("ma_ptabbutton_1_texture"):SetGradientAlpha("vertical", 0.20, 0.85, 0.30, 1, 0.05, 0.30, 0.10, 0.85)
+    getglobal("ma_ptabbutton_2_texture"):SetGradientAlpha("vertical", 0.20, 0.85, 0.30, 0, 0.05, 0.30, 0.10, 0.55)
     FrameLib:HandleGroup("popup", function(frame) frame:Show() end)
     for n = 1,7 do
       getglobal("ma_PopupScrollBarEntry"..n):Hide()
