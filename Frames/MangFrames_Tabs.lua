@@ -37,7 +37,7 @@ function MangAdmin:CreateTabs()
       color = {color.bg.r, color.bg.g, color.bg.b, transparency.bg},
       gradient = {
         orientation = "vertical",
-        min = {102,102,102,1},
+        min = {0.20, 0.85, 0.30, 1},
         max = {color.bg.r, color.bg.g, color.bg.b, transparency.bg}
       }
     },
@@ -64,7 +64,7 @@ function MangAdmin:CreateTabs()
       color = {color.bg.r, color.bg.g, color.bg.b, transparency.bg},
       gradient = {
         orientation = "vertical",
-        min = {102,102,102,0},
+        min = {0.20, 0.85, 0.30, 0},
         max = {color.bg.r, color.bg.g, color.bg.b, transparency.bg}
       }
     },
@@ -90,7 +90,7 @@ function MangAdmin:CreateTabs()
       color = {color.bg.r, color.bg.g, color.bg.b, transparency.bg},
       gradient = {
         orientation = "vertical",
-        min = {102,102,102,0},
+        min = {0.20, 0.85, 0.30, 0},
         max = {color.bg.r, color.bg.g, color.bg.b, transparency.bg}
       }
     },
@@ -116,7 +116,7 @@ function MangAdmin:CreateTabs()
       color = {color.bg.r, color.bg.g, color.bg.b, transparency.bg},
       gradient = {
         orientation = "vertical",
-        min = {102,102,102,0},
+        min = {0.20, 0.85, 0.30, 0},
         max = {color.bg.r, color.bg.g, color.bg.b, transparency.bg}
       }
     },
@@ -142,7 +142,7 @@ function MangAdmin:CreateTabs()
       color = {color.bg.r, color.bg.g, color.bg.b, transparency.bg},
       gradient = {
         orientation = "vertical",
-        min = {102,102,102,0},
+        min = {0.20, 0.85, 0.30, 0},
         max = {color.bg.r, color.bg.g, color.bg.b, transparency.bg}
       }
     },
@@ -168,7 +168,7 @@ function MangAdmin:CreateTabs()
       color = {color.bg.r, color.bg.g, color.bg.b, transparency.bg},
       gradient = {
         orientation = "vertical",
-        min = {102,102,102,0},
+        min = {0.20, 0.85, 0.30, 0},
         max = {color.bg.r, color.bg.g, color.bg.b, transparency.bg}
       }
     },
@@ -195,7 +195,7 @@ function MangAdmin:CreateTabs()
       color = {color.bg.r, color.bg.g, color.bg.b, transparency.bg},
       gradient = {
         orientation = "vertical",
-        min = {102,102,102,0},
+        min = {0.20, 0.85, 0.30, 0},
         max = {color.bg.r, color.bg.g, color.bg.b, transparency.bg}
       }
     },
@@ -221,7 +221,7 @@ function MangAdmin:CreateTabs()
       color = {color.bg.r, color.bg.g, color.bg.b, transparency.bg},
       gradient = {
         orientation = "vertical",
-        min = {102,102,102,0},
+        min = {0.20, 0.85, 0.30, 0},
         max = {color.bg.r, color.bg.g, color.bg.b, transparency.bg}
       }
     },
@@ -247,7 +247,7 @@ function MangAdmin:CreateTabs()
       color = {color.bg.r, color.bg.g, color.bg.b, transparency.bg},
       gradient = {
         orientation = "vertical",
-        min = {102,102,102,0},
+        min = {0.20, 0.85, 0.30, 0},
         max = {color.bg.r, color.bg.g, color.bg.b, transparency.bg}
       }
     },
@@ -274,7 +274,7 @@ function MangAdmin:CreateTabs()
       color = {color.bg.r, color.bg.g, color.bg.b, transparency.bg},
       gradient = {
         orientation = "vertical",
-        min = {102,102,102,0},
+        min = {0.20, 0.85, 0.30, 0},
         max = {color.bg.r, color.bg.g, color.bg.b, transparency.bg}
       }
     },
@@ -300,7 +300,7 @@ function MangAdmin:CreateTabs()
       color = {color.bg.r, color.bg.g, color.bg.b, transparency.bg},
       gradient = {
         orientation = "vertical",
-        min = {102,102,102,0},
+        min = {0.20, 0.85, 0.30, 0},
         max = {color.bg.r, color.bg.g, color.bg.b, transparency.bg}
       }
     },
@@ -326,7 +326,7 @@ function MangAdmin:CreateTabs()
       color = {color.bg.r, color.bg.g, color.bg.b, transparency.bg},
       gradient = {
         orientation = "vertical",
-        min = {102,102,102,0},
+        min = {0.20, 0.85, 0.30, 0},
         max = {color.bg.r, color.bg.g, color.bg.b, transparency.bg}
       }
     },

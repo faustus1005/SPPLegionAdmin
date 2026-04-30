@@ -37,8 +37,8 @@ function MangAdmin:CreateStartFrames()
     },
     draggable = true,
     size = {
-      width = 750,
-      height = 460
+      width = 880,
+      height = 540
     },
     setpoint = {
       pos = "CENTER"
@@ -54,7 +54,7 @@ function MangAdmin:CreateStartFrames()
       color = {color.frm.r, color.frm.g, color.frm.b, transparency.frm}
     },
     size = {
-      width = 750,
+      width = 880,
       height = 22
     },
     setpoint = {
@@ -78,7 +78,7 @@ function MangAdmin:CreateStartFrames()
       color = {color.frm.r, color.frm.g, color.frm.b, transparency.frm}
     },
     size = {
-      width = 750,
+      width = 880,
       height = 80
     },
     setpoint = {
@@ -101,8 +101,8 @@ function MangAdmin:CreateStartFrames()
       color = {color.frm.r, color.frm.g, color.frm.b, transparency.frm}
     },
     size = {
-      width = 750,
-      height = 254
+      width = 880,
+      height = 290
     },
     setpoint = {
       pos = "TOP",
@@ -119,13 +119,13 @@ function MangAdmin:CreateStartFrames()
       color = {color.frm.r, color.frm.g, color.frm.b, transparency.frm}
     },
     size = {
-      width = 409,
-      height = 100
+      width = 425,
+      height = 138
     },
     setpoint = {
       pos = "TOP",
-      offX = -168.5,
-      offY = -360
+      offX = -217.5,
+      offY = -396
     },
     inherits = nil
   })
@@ -138,13 +138,13 @@ function MangAdmin:CreateStartFrames()
       color = {color.frm.r, color.frm.g, color.frm.b, transparency.frm}
     },
     size = {
-      width = 335,
-      height = 100
+      width = 425,
+      height = 138
     },
     setpoint = {
       pos = "TOP",
-      offX = 205.5,
-      offY = -360
+      offX = 217.5,
+      offY = -396
     },
     inherits = nil
   })

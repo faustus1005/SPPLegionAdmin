@@ -151,7 +151,7 @@ function MangAdmin:CreatePopupFrames()
       color = {color.frm.r, color.frm.g, color.frm.b, transparency.frm},
       gradient = {
         orientation = "vertical",
-        min = {102,102,102,1},
+        min = {0.20, 0.85, 0.30, 1},
         max = {color.frm.r, color.frm.g, color.frm.b, transparency.frm}
       }
     },
@@ -178,7 +178,7 @@ function MangAdmin:CreatePopupFrames()
       color = {color.frm.r, color.frm.g, color.frm.b, transparency.frm},
       gradient = {
         orientation = "vertical",
-        min = {102,102,102,0},
+        min = {0.20, 0.85, 0.30, 0},
         max = {color.frm.r, color.frm.g, color.frm.b, transparency.frm}
       }
     },
